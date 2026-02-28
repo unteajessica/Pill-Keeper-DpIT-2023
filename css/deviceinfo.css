@@ -1,0 +1,12 @@
+@media screen and (min-width: 0px) and (max-width: 380px) {
+    header .nav-logo {
+      font-size: 18px;
+      padding: 15px 0px 0px; } }
+  header .nav-logo .fab {
+    color: #969696;
+    height: auto; }
+  
+  header .nav-logo img {
+    max-width: 100%;
+    height: 30px;
+    margin-top: 13px; }

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PillKeeper - Medical Mobile App </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- CSS  -->
+  <link rel="stylesheet" href="lib/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- materialize icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Owl carousel -->
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
+</head>
+<script>
+
+</script>
+<body id="homepage">
+  <!-- BEGIN PRELOADING -->
+  <div class="preloading">
+    <div class="wrap-preload">
+      <div class="cssload-loader"></div>
+    </div>
+  </div>
+  <!-- END PRELOADING -->
+  <!-- HEADER -->
+  <header id="header" class="header-innerpage ">
+    <div class="nav-wrapper container">
+
+
+      <div class="header-menu-button">
+        <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category">
+          <div class="cst-btn-menu">
+            <i class="fas fa-align-left"></i>
+          </div>
+        </a>
+      </div>
+      <div class="header-logo">
+        <a href="#" class="nav-logo">PillKeeper</a>
+      </div>
+
+
+
+    </div>
+  </header>
+  <!-- END HEADER -->
+  <!-- SIDE NAV-->
+  <nav>
+
+    <!-- LEFT SIDENAV-->
+    <ul id="nav-mobile-category" class="side-nav">
+      <li class="profile">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer>
+        </script>
+        <a href="index.html"><i class=""></i>Back</a>
+      </li>
+      <li>
+        <a href="contact.html"><i class="fas fa-envelope"></i>Contact Us</a>
+      </li>
+    </ul>
+    <!-- END LEFT SIDENAV-->
+    <!-- RIGHT SIDENAV-->
+    <ul id="nav-mobile-account" class="side-nav">
+      <li class="sidenav-logo">
+        Search
+      </li>
+      <li>
+        <div class="search-wrapper ">
+          <input id="search"><i class="material-icons">search</i>
+          <div class="search-results"></div>
+        </div>
+      </li>
+      <li>
+        <ul class="sidenav-search-result">
+          <li class="search-result-head"><a href="#">Search result</a></li>
+          <li><a href="#">Info - Healt Care Solution</a></li>
+          <li><a href="#">info - 5 ways to winterproof your skin </a></li>
+          <li><a href="#">info - 4 healthy snacks to keep you full </a></li>
+
+        </ul>
+      </li>
+      <li>
+        <ul class="sidenav-search-result">
+          <li class="search-result-head"><a href="#">Populer tag</a></li>
+          <li>
+            <div class="section populer-search">
+              <div class="list-tag-word">
+                <a class="tag-word">Doctor</a>
+                <a class="tag-word">Medicine</a>
+                <a class="tag-word">Hospital</a>
+                <a class="tag-word">health</a>
+                <a class="tag-word">drink</a>
+                <a class="tag-word">sport</a>
+                <a class="tag-word">Checkup</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </li>
+
+
+    </ul>
+    <!-- END RIGHT SIDENAV-->
+
+  </nav>
+  <!-- END SIDENAV-->
+
+  <div class="button"  style="justify-content: center;align-items: center;display: flex;"  >
+    <a href="./index.html" style="margin-top: 30px;font-size: large;color: #318bb1;font-size: large;">Back</a>
+  </div>
+
+
+  <!-- CONTENT -->
+  <div id="page-content">
+    <div class="register-form">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="section-title">
+              <span class="theme-secondary-color">Adaugă rețeta</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="col s12 m6 l4 offset-m3 offset-l4">
+                <label for="titlu-reteta">Titlul rețetei</label>
+                <input id="titlu-reteta" type="text" class="validate">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m6 l4 offset-m3 offset-l4">
+                <label for="denumire-medicament">Denumirea medicamentului</label>
+                <input id="denumire-medicament" type="text" class="validate">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m6 l4 offset-m3 offset-l4">
+                <label id="label-frecventa-de-administrare" for="frecventa-de-administrare">Frecvența (număr de zile) = ?</label>
+                <input id="frecventa-de-administrare" type="range" min="1" max="7" step="1" class="validate" title="Frecvență (număr de zile)" onchange="document.getElementById('label-frecventa-de-administrare').innerHTML = 'Frecvența (număr de zile) = ' + this.value">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m6 l4 offset-m3 offset-l4">
+                <label for="ora-de-administrare">Ora</label>
+                <input id="ora-de-administrare" type="time" class="validate" title="Ora">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m6 l4 offset-m3 offset-l4">
+                <label for="data-inceput">Data început</label>
+                <input id="data-inceput" type="date" class="validate" title="Data început">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m6 l4 offset-m3 offset-l4">
+                <label for="data-sfarsit">Data sfârșit</label>
+                <input id="data-sfarsit" type="date" class="validate" title="Data sfârșit">
+              </div>
+            </div>
+            <script>
+              function fillMedicalPrescription(prescription) {
+                document.getElementById("titlu-reteta").value = prescription.titluReteta;
+                document.getElementById("denumire-medicament").value = prescription.denumireMedicament;
+                document.getElementById('label-frecventa-de-administrare').innerHTML = 'Frecvența (număr de zile) = ' + prescription.frecventaDeAdministrare
+                document.getElementById("frecventa-de-administrare").value = prescription.frecventaDeAdministrare;
+                document.getElementById("ora-de-administrare").value = prescription.oraDeAdministrare;
+                document.getElementById("data-inceput").value = prescription.dataInceput;
+                document.getElementById("data-sfarsit").value = prescription.dataSfarsit;
+              }
+
+              const prescription = {
+                titluReteta: "tratament", 
+                denumireMedicament: "Nurofen",
+                frecventaDeAdministrare: 1,
+                oraDeAdministrare: "08:00",
+                dataInceput: "2023-11-01",
+                dataSfarsit: "2023-11-10"
+              };
+
+              fillMedicalPrescription(prescription);
+            </script>
+            <div class="row">
+              <div class="input-field col s12 m6 l4 offset-m3 offset-l4 center">
+                <button type="button" onclick="handleConfirmButtonClick()" style="background-color:#318bb1;font-size:110%;color: white;height:50px;font-family: sans-serif;border: #318bb1;">CONFIRM</button>
+              </div>
+              <script>
+                function createMedicalPrescription() {
+                  const titluReteta = document.getElementById("titlu-reteta").value;
+                  const denumireMedicament = document.getElementById("denumire-medicament").value;
+                  const frecventaDeAdministrare = document.getElementById("frecventa-de-administrare").value;
+                  const oraDeAdministrare = document.getElementById("ora-de-administrare").value;
+                  const dataInceput = document.getElementById("data-inceput").value;
+                  const dataSfarsit = document.getElementById("data-sfarsit").value;
+                  return { 
+                    titluReteta: titluReteta, 
+                    denumireMedicament: denumireMedicament,
+                    frecventaDeAdministrare: frecventaDeAdministrare,
+                    oraDeAdministrare: oraDeAdministrare,
+                    dataInceput: dataInceput,
+                    dataSfarsit: dataSfarsit
+                  };
+                }
+
+                function createPillKeeperDatabase() {
+                  const openRequest = indexedDB.open("pill-keeper-database");
+                  openRequest.onupgradeneeded = function() {
+                    const database = openRequest.result;
+                    database.createObjectStore("medical-prescriptions", { keyPath: "id", autoIncrement: true });
+                  };
+                }
+
+                function saveMedicalPrescription(medicalPrescription) {
+                  const openRequest = indexedDB.open("pill-keeper-database");
+                  openRequest.onsuccess = function() {
+                    const database = openRequest.result;
+                    const transaction = database.transaction("medical-prescriptions", "readwrite");
+                    const medicalPrescriptions = transaction.objectStore("medical-prescriptions");
+                    const request = medicalPrescriptions.add(medicalPrescription);
+                    request.onsuccess = function() {
+                      document.getElementById("afisare-text").innerHTML = "Reteta a fost adaugata cu succes!";
+                    };
+                    request.onerror = function() {
+                      document.getElementById("afisare-text").innerHTML = "Reteta NU a fost adaugata!";
+                    };
+                  };
+                }
+
+                function handleConfirmButtonClick() {
+                  createPillKeeperDatabase();
+                  const medicalPrescription = createMedicalPrescription();
+                  saveMedicalPrescription(medicalPrescription);
+                }
+              </script>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <center>
+    <p id="afisare-text" style="color: rgb(0, 187, 0);"></p>
+  </center>
+
+
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row row-footer-icon">
+        <div class="col s12">
+          <div class="footer-sosmed-icon ">
+            <div class="wrap-circle-sosmed ">
+              <a href="#">
+                <div class="circle-sosmed">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </a>
+            </div>
+            <div class="wrap-circle-sosmed ">
+              <a href="#">
+                <div class="circle-sosmed">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row copyright">
+        2023 <span>PillKeeper</span>, All rights reserved.
+      </div>
+    </div>
+
+
+
+  </footer>
+  <!-- END FOOTER -->
+  <!-- Script -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <!-- Owl carousel -->
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="lib/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+  <!-- Slick JS -->
+  <script src="lib/slick/slick/slick.min.js"></script>
+  <!-- Custom script -->
+  <script src="js/custom.js"></script>
+</body>
+</html>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retete Medicamente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #recipe-form {
+            margin: 20px;
+        }
+        #recipe-list {
+            margin: 20px;
+        }
+        .recipe {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer; /* Adăugăm un cursor de tip mână pentru a indica că elementele pot fi accesate */
+        }
+    </style>
+</head>
+<body>
+    <h1>Retete Medicamente</h1>
+    
+    <!-- Formular pentru adăugarea de rețete -->
+    <form id="recipe-form">
+        <label for="recipe-title">Titlu Reteta:</label>
+        <input type="text" id="recipe-title" required>
+        <label for="recipe-description">Descriere:</label>
+        <textarea id="recipe-description" rows="4" required></textarea>
+        <button type="submit">Adaugă Reteta</button>
+    </form>
+
+    <!-- Lista de rețete -->
+    <div id="recipe-list">
+        <h2>Lista de Retete</h2>
+    </div>
+
+    <script>
+        // Obținem referințe la elementele HTML
+        const recipeForm = document.getElementById('recipe-form');
+        const recipeList = document.getElementById('recipe-list');
+
+        // Funcție pentru afișarea detaliilor unei rețete
+        function showRecipeDetails(title, description) {
+            // Creăm un alert simplu pentru a afișa detaliile rețetei
+            alert(`Titlu: ${title}\nDescriere: ${description}`);
+        }
+
+        // Ascultăm evenimentul de submit al formularului
+        recipeForm.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevenim comportamentul implicit al formularului
+
+            // Obținem valorile introduse de utilizator
+            const title = document.getElementById('recipe-title').value;
+            const description = document.getElementById('recipe-description').value;
+
+            // Creăm un element pentru rețetă și îl adăugăm la lista de rețete
+            const recipeItem = document.createElement('div');
+            recipeItem.className = 'recipe';
+            recipeItem.innerHTML = `<h3>${title}</h3><p>${description}</p>`;
+            
+            // Adăugăm un eveniment de click pentru a afișa detaliile rețetei
+            recipeItem.addEventListener('click', () => {
+                showRecipeDetails(title, description);
+            });
+
+            recipeList.appendChild(recipeItem);
+
+            // Resetăm formularul
+            recipeForm.reset();
+        });
+    </script>
+</body>
+</html>
+Am adăugat un eveniment de click la fiecare element de rețetă, astfel încât atunci când utilizatorul face clic pe un element de rețetă, se va afișa un alert cu detalii despre rețetă. Puteți personaliza funcția showRecipeDetails pentru a afișa detalii într-un mod mai elegant sau pentru a deschide o pagină de detaliu dedicată pentru fiecare rețetă.
+
+
+
+
+

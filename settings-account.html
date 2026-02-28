@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PillKeeper - Never Miss a Dose </title> 
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="HandheldFriendly" content="True">
+<link rel="icon" href="https://acortar.link/hWRoZY" type="image/x-icon">
+<!-- CSS  -->
+<link rel="stylesheet" href="lib/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
+<link rel="stylesheet" href="css/materialize.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- materialize icon -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Owl carousel -->
+<link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
+<!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
+</head>
+<body id="homepage">
+<!-- BEGIN PRELOADING -->
+<div class="preloading">
+  <div class="wrap-preload">
+    <div class="cssload-loader"></div>
+  </div>
+</div>
+<!-- END PRELOADING -->
+<!-- HEADER -->
+<header id="header" class="header-innerpage ">
+<div class="nav-wrapper container">
+
+
+   <div class="header-menu-button">
+    <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category">
+    <div class="cst-btn-menu">
+      <i class="fas fa-align-left"></i>
+    </div>
+    </a>
+  </div>
+  <div class="header-logo">
+    <a href="#" class="nav-logo">PillKeeper</a>
+  </div>
+ 
+ 
+  
+</div>
+</header>
+<!-- END HEADER -->
+<!-- SIDE NAV-->
+<nav>
+
+<!-- LEFT SIDENAV-->
+<ul id="nav-mobile-category" class="side-nav">
+  <li class="profile">
+    <div class="li-profile-info">
+      <img src="img/profile4.jpg" alt="profile">
+      <h2>Maia Skywalker</h2>
+      <div class="emailprofile">maia@email.com</div>
+
+    </div>
+    <div class="bg-profile-li">
+      <img alt="photo" src="img/bg-profile.jpg">
+    </div>
+  </li>
+  <li>
+    <a class="waves-effect waves-blue" href="index.html"><i class="fas fa-home"></i>Home</a>
+  </li>
+  
+  <li>
+    <a href="gallery.html"><i class="fas fa-camera-retro"></i>Gallery</a>
+  </li>
+  <li>
+    <a href="contact.html"><i class="fas fa-envelope"></i>Contact Us</a>
+  </li>
+  <li>
+    <a href="login.html"><i class="fas fa-sign-out-alt"></i>Sign Out</a>
+  </li>
+</ul>
+<!-- END LEFT SIDENAV-->
+<!-- RIGHT SIDENAV-->
+<!-- END RIGHT SIDENAV-->
+
+</nav>
+<!-- END SIDENAV-->
+
+
+<!-- CONTENT -->
+<div id="page-content">
+  <div class="setting-page">
+    <div class="container">
+      <div class="row ">
+        <div class="col s12 m12 l12 ">
+          <div class="section-title">
+            <span class="theme-secondary-color">SETTING</span> ACCOUNT
+          </div>
+        </div>
+      </div>
+      <br> 
+      <form>
+        <div class="row">
+          <div class="col s12 m12 l12">
+        
+            <div class="setting-photo">
+              <img alt="avatar" id="uploadedPhoto" src="img/profile4.jpg">
+            </div>
+            <div class="sphoto-text">Photo ( 130 x 130 )</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="file-field input-field col s12 m12 l12 no-margin-top">
+            <div class="btn">
+              <span>File</span>
+              <input type="file" id="photoInput" accept="image/*"></div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" placeholder="Upload one or more files"></div>
+          </div>
+        </div>
+        
+        <script>
+          const photoInput = document.getElementById('photoInput');
+          const uploadedPhoto = document.getElementById('uploadedPhoto');
+        
+          photoInput.addEventListener('change', function(event) {
+            const selectedFile = event.target.files[0];
+            
+            if (selectedFile) {
+              const reader = new FileReader();
+              reader.onload = function(event) {
+                uploadedPhoto.src = event.target.result;
+              };
+              reader.readAsDataURL(selectedFile);
+            }
+          });
+        </script>
+        
+        <div class="row">
+          <div class="input-field col s12 m12 l12 ">
+            <input value="Maia" id="user-firstname" type="text" class="validate">
+            <label for="user-firstname">First Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m12 l12 ">
+            <input value="Skywalker" id="user-lastname" type="text" class="validate">
+            <label for="user-lastname">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m12 l12 ">
+            <input value="maia@email.com" id="user-email" type="email" class="validate">
+            <label for="user-email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m12 l12 ">
+            <input value="0755197355" id="user-phone" type="tel" class="validate">
+            <label for="user-phone">Phone</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m12 l12 ">
+            <textarea id="user-address" class="materialize-textarea">Lombardy Lake Como, Italy</textarea>
+            <label for="user-address">Address</label>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m6 l4 offset-m3 offset-l4 center">
+              <input class="waves-effect waves-light btn" value="SUBMIT" type="submit"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- END CONTENT -->
+
+ 
+ 
+<!-- SUBSCRIBE -->
+<!-- END SUBSCRIBE -->
+<!-- FOOTER  -->
+<footer id="footer">
+  <div class="container">
+    <div class="row row-footer-icon">
+      <div class="col s12">
+        <div class="footer-sosmed-icon ">
+          <div class="wrap-circle-sosmed ">
+            <a href="https://www.instagram.com/pill_keeper/">
+            <div class="circle-sosmed">
+              <i class="fab fa-instagram"></i>
+            </div>
+            </a>
+          </div>
+          <div class="wrap-circle-sosmed ">
+            <a href="https://www.facebook.com/people/PillKeeper/61550074327222/?mibextid=LQQJ4d">
+            <div class="circle-sosmed">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="row copyright">
+     2023 <span>PillKeeper</span>, All rights reserved.
+  </div>
+</div>
+</footer>
+<!-- END FOOTER -->
+<!-- Script -->
+<script src="js/jquery.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<!-- Owl carousel -->
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="lib/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+<!-- Slick JS -->
+<script src="lib/slick/slick/slick.min.js"></script>
+<!-- Custom script -->
+<script src="js/custom.js"></script>
+</body>
+</html>

@@ -8,6 +8,8 @@ The application was designed to help users manage medication schedules, prescrip
 
 This project was created as part of the DpIT (Development Program in IT) training program, focusing on collaborative development and gaining hands-on experience.
 
+Presentation Video: https://youtu.be/B_A2EjuvhwY
+
 ## 🛠️ Technologies Used
 
 - HTML5
